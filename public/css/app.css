@@ -1,0 +1,448 @@
+/*---------------------------- Universal Styles ----------------------------*/
+
+body {
+	margin: 0px;
+	text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    position: relative;
+    color: #6D483C;
+}
+
+h1 {
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	font-size: -webkit-xxx-large;
+	color: #D11241;
+	font-weight: bolder;
+}
+
+h3 {
+	margin-top: 0px;
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	font-size: 28px;
+	color: #D11241;
+	font-weight: bolder;
+}
+
+p {
+	font-family: "Roboto Slab", serif;
+	font-size: larger;
+	text-align: center;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+ul {
+	list-style-type: none;
+	padding:0; 
+	margin:0;
+}
+
+button {
+	border: 0px;
+	padding: 0px;
+	color: #D11241;
+	background-color: #FFFFFF;
+	width: 20px;  
+	height: 20px;
+	border-width:16px;
+}
+
+/*---------------------------- Cover Photo Styles ----------------------------*/
+
+.front {
+	position: relative; 
+	left: 0; 
+	top: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+#cover {
+	height: auto;
+	width:100%;
+	max-width: 100%;
+}
+
+.cover {
+	padding-top: 0px;
+	background-position: center center;
+	z-index: -1;
+	position: relative; 
+	top: 0; 
+	left: 0;
+	max-width: 100%;
+}
+
+
+/*---------------------------- Cover Photo Parallax ----------------------------*/
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section.module.parallax {
+  padding: 240px 0;
+  background-position: 50% 0px;
+}
+
+section.module.parallax-1 {
+  background-image: url("../images/muffin.jpg");
+}
+
+@media all and (min-width: 600px) {
+
+  section.module.parallax {
+    padding: 355px 0;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+
+/*---------------------------- Logo Styles ----------------------------*/
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: auto;
+  max-width: 70%;
+}
+
+/*---------------------------- Navbar Styles ----------------------------*/
+
+#nav_bar {
+	border: 0;
+	background-color: #FFFFFF;
+	border-radius: 0px;
+	margin-bottom: 0;
+    height: 65px;
+    padding-top: 6px;
+    box-shadow: 0px 1px 3px #983E14;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+    border-bottom: 
+}
+
+.nav_bar_height_adjustment {
+	height: 60px;
+}
+
+
+/*---------------------------- Navbar Links Styles ----------------------------*/
+
+.nav {
+    z-index: 0;
+  }
+
+.nav ul {
+	list-style: none;
+	background-color: #444;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.nav > li {
+ 	display: inline-block;
+}
+.nav > li + li {
+ 	margin-left: 20px;
+}
+.nav > li > a {
+	padding-right: 0;
+	padding-left: 0;
+	font-size: 35px;
+	color: #ff4444; /* IE8 proofing */
+	color: #D11241;
+	border-bottom: 2px solid transparent;
+	display: block;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: transparent;
+	color: #f21549;
+	border-bottom-color: #f21549;
+}
+.nav > .active > a,
+.nav > .active > a:hover,
+.nav > .active > a:focus {
+	color: #D11241;
+	border-bottom-color: #D11241;
+}
+
+.menu {
+	display: none;
+}
+
+/*---------------------------- Navbar Collapsible Menu Styles ----------------------------*/
+
+@media (min-width: 768px) {
+  
+  .nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  
+.menu {
+	display: block;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 5px;
+	position: absolute;
+	z-index: 1;
+	}
+
+.nav {
+    text-align: center;
+    z-index: 2;
+	}
+
+.nav > li {
+    display: none;
+	}
+
+.mobile-nav > li {
+	display: inline-block;
+	text-align: right;
+	z-index: 10;
+	font-size: 16px;
+	padding-top: 18px;
+	}
+
+.mobile-nav > li > a {
+	font-size: 16px;
+	}
+
+.nav-show > li {
+  	display: inline-block;
+	}
+
+#nav_bar {
+	background-color: #FFFFFF;
+	border-radius: 0px;
+	margin-bottom: 0;
+    height: 60px;
+    padding-top: 0px;
+    z-index: 10;
+    text-align: right;
+    padding-right: 10px;
+	}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+  	position: fixed;
+    width: 100%;
+	}
+
+.nav_bar_height_adjustment {
+	height: 60px;
+	}
+
+.anchor {
+  display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+	}
+}
+
+
+/*---------------------------- Links Styles ----------------------------*/
+
+a:-webkit-any-link {
+    text-decoration: none;
+    cursor: auto;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #B96455;
+}
+
+
+/*---------------------------- Separator Styles ----------------------------*/
+
+.separator {
+	margin: 0 auto;
+    width: 75%;
+    height: 2px;
+    background-color: rgba(209, 18, 65, 0.2);
+    border: none;
+}
+
+.separator-small {
+	margin: 0 auto;
+    width: 25%;
+    height: 2px;
+    background-color: rgba(209, 18, 65, 0.2);
+    border: none;
+    padding-top: 40px;
+}
+
+
+/*---------------------------- About Styles ----------------------------*/
+
+#about {
+	display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
+.about-container {
+	position:relative;
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.link-padding {
+	padding-right: 35px;
+}
+
+.about-box {
+	width: 100%;
+	height: auto;
+}
+
+.about-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/*---------------------------- Location Styles ----------------------------*/
+
+#locations {
+	display: block;
+  height: 60px;
+  margin-top: -60px;
+  visibility: hidden;
+}
+
+/*---------------------------- Map Styles ----------------------------*/
+
+#map {
+	height: 350px;
+	width:75%;
+	margin: 0 auto;
+}
+
+/*---------------------------- contact Styles ----------------------------*/
+
+.contact-box {
+	width: 75%;
+	height: auto;
+	padding-bottom: 30px;
+	padding-left: 90px;
+}
+
+.application-button {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #D11241;
+    padding-left: 80px;
+}
+
+.application-heading {
+	padding-top: 50px;
+}
+
+
+.application-box {
+	text-align: left;
+}
+
+.application-box > p {
+	padding-left: 80px;
+}
+
+/*---------------------------- Footer Styles ----------------------------*/
+.social-icons {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.social-icon {
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #D11241;
+}
+
+/*Social Media Links*/
+.social-icons-link {
+	color: #000000;
+	
+}
+
+
+.footer {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    position: static;
+    bottom: 0;
+  }
+
+@media (min-width: 992px) {
+	.footer {
+		width: 100%;
+	}
+}
+
+
+.social-icons {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.social-icon {
+	padding-left: 7.5px;
+	padding-right: 7.5px;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #D11241;
+}
+
+/*Social Media Links*/
+.social-icons-link {
+	color: #000000;
+	
+}
