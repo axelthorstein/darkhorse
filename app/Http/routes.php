@@ -11,7 +11,23 @@
 |
 */
 
+//use Illuminate/Support/Facades/Mail;
+
 $app->get('/', function () use ($app) {
     return view('home');
+});
+
+$app->get('/application', function () use ($app) {
+    return view('application');
+});
+
+$app->post('/send', function () use ($app) {
+    return view('send');
+});
+
+
+Mail::send('send', array('name' => 'Axel'), function($message)
+{
+    $message->to('axelthorstein@gmail.com', 'John Smith')->subject('Welcome!');
 });
 

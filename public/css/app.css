@@ -26,6 +26,21 @@ h3 {
 	font-weight: bolder;
 }
 
+h4 {
+	margin-top: 0px;
+	font-family: "Roboto Slab", serif;
+	text-align: left;
+	font-size: 22px;
+	color: #D11241;
+	font-weight: bolder;
+	display: inline-block;
+	padding-right: 20px;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 p {
 	font-family: "Roboto Slab", serif;
 	font-size: larger;
@@ -277,7 +292,7 @@ a:-webkit-any-link {
     cursor: auto;
     font-size: 18px;
     font-weight: bolder;
-    color: #B96455;
+    color: #792F21;
 }
 
 
@@ -341,6 +356,17 @@ a:-webkit-any-link {
   visibility: hidden;
 }
 
+#location-headers {
+	margin-top: 0px;
+	font-family: "Roboto Slab", serif;
+	text-align: center;
+	font-size: 28px;
+	color: #D11241;
+	font-weight: bolder;
+	text-decoration: none;
+	display: block;
+}
+
 /*---------------------------- Map Styles ----------------------------*/
 
 #map {
@@ -377,6 +403,48 @@ a:-webkit-any-link {
 .application-box > p {
 	padding-left: 80px;
 }
+
+
+/*---------------------------- Application Styles ----------------------------*/
+
+input[type="text"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+.style-1 input[type="text"] {
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus,
+.style-1 input[type="text"].focus {
+  border: solid 1px #D11241;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.application-input-box {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+
+#availability {
+	text-align: left;
+}
+
+
+/* radio focus */
+
 
 /*---------------------------- Footer Styles ----------------------------*/
 .social-icons {

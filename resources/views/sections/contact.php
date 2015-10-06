@@ -1,7 +1,8 @@
 <span class="anchor" id="contact"></span>
 <div class="about-padding">
 	<h1> Contact Us </h1>
-	<div class="row">
+	<hr class="separator">
+	<div class="row about-padding">
 		<div class="col-md-6">
 			<img src="images/people.jpg" class="contact-box">
 		</div>
