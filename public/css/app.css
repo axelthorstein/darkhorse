@@ -248,6 +248,7 @@ section.module.parallax-1 {
 
 .mobile-nav > li > a {
 	font-size: 16px;
+	color: #D11241;
 	}
 
 .nav-show > li {
@@ -262,7 +263,7 @@ section.module.parallax-1 {
     padding-top: 0px;
     z-index: 10;
     text-align: right;
-    padding-right: 10px;
+    color: #D11241;
 	}
 
 .navbar-fixed {
@@ -270,7 +271,9 @@ section.module.parallax-1 {
     z-index: 100;
   	position: fixed;
     width: 100%;
+    padding-right: 20px;
 	}
+
 
 .nav_bar_height_adjustment {
 	height: 60px;
@@ -341,11 +344,69 @@ a:-webkit-any-link {
 	height: auto;
 }
 
+.about-box-mobile-show {
+	width: 100%;
+	height: auto;
+}
+
 .about-padding {
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+  .about-box {
+	width: 100%;
+	height: auto;
+	display: none;
+  }
+
+  .about-box-mobile-show {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+}
+
+.about-container {
+	position:relative;
+	width: 65%;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+}
+
+@media (max-width: 550px) {
+  .about-box {
+	width: 100%;
+	height: auto;
+	display: none;
+  }
+
+  .about-box-mobile-show {
+	width: 85%;
+	height: auto;
+	padding: 0px;
+}
+
+.about-container {
+	position:relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.mobile-title-hide{
+	display: none;
+}
+
+.about-padding {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+}
 
 /*---------------------------- Location Styles ----------------------------*/
 
@@ -375,6 +436,15 @@ a:-webkit-any-link {
 	margin: 0 auto;
 }
 
+@media (max-width: 550px) {
+  #map {
+	height: 350px;
+	width:100%;
+	margin: 0 auto;
+}
+
+}
+
 /*---------------------------- contact Styles ----------------------------*/
 
 .contact-box {
@@ -402,6 +472,32 @@ a:-webkit-any-link {
 
 .application-box > p {
 	padding-left: 80px;
+}
+
+@media (max-width: 550px) {
+
+  .contact-box {
+	width: 85%;
+	height: auto;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.application-box {
+	text-align: center;
+}
+
+.application-box > p {
+	padding-left: 00px;
+}
+
+.application-button {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #D11241;
+    padding-left: 0px;
+}
+
 }
 
 

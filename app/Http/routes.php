@@ -26,8 +26,4 @@ $app->post('/send', function () use ($app) {
 });
 
 
-Mail::send('send', array('name' => 'Axel'), function($message)
-{
-    $message->to('axelthorstein@gmail.com', 'John Smith')->subject('Welcome!');
-});
 

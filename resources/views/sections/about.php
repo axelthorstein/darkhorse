@@ -7,7 +7,7 @@
 	<div class="about-container">
 		<div class="row about-padding">
 			<div class="col-md-6">
-				<img src="images/latte-pour.jpg" class="about-box">
+				<img src="images/latte-pour.jpg" class="about-box-mobile-show">
 			</div>
 	  		<div class="col-md-6">
 	  			<h3 class="text-center ">Espresso</h3>
@@ -19,7 +19,7 @@
 		</div>
 		<div class="row about-padding">
 			<div class="col-md-6">
-				<h3 class="text-center">Baked Goods</h3>
+				<h3 class="text-center mobile-title-hide">Baked Goods</h3>
 				<p class="text-center about-box">Along with our espresso we have recently begun baking all our own pastries at our Geary Location! We offer a range of savoury and sweet pastries, as well as gluten free options, delivered fresh every morning. We also offer freshly in-house made paninis, with vegetarian and vegan options. </p>
 			</div>
 	  		<div class="col-md-6">
@@ -31,15 +31,16 @@
 				<img src="images/cold.jpg" class="about-box">
 			</div>
 	  		<div class="col-md-6">
-	  			<h3 class="text-center">Cold Brew</h3>
+	  			<h3 class="text-center mobile-title-hide">Cold Brew</h3>
 				<p class="text-center about-box">Started after some of our resident coffee experts started experimenting with 24 hour cold brew drip siphons, our Dark Horse House cold brew was born. Made with <a target="_blank" href="http://www.pigironcoffee.com/index.php/">Pig Iron Espresso</a> and love. </p>
 	  		</div>
 		</div>
 		<div class="row about-padding">
 			<div class="col-md-6">
-				<h3 class="text-center">Fresh Juices</h3>
+				<h3 class="text-center mobile-title-hide">Fresh Juices</h3>
 				<p class="text-center about-box">For those mornings when you need a little immune boost with your coffee we also offer Fresh Juices! Cold pressed, 100% organic, raw, vegan, small batch, made fresh daily! Visit the Fresh website for more information about current stocks: </p>
-				<a target="_blank" href="http://www.freshrestaurants.ca/">Fresh Restaurants</a>		</div>
+				<a class="mobile-title-hide" target="_blank" href="http://www.freshrestaurants.ca/">Fresh Restaurants</a>		
+			</div>
 	  		<div class="col-md-6">
 	  			<img src="images/fresh.jpg" class="about-box">
 	  		</div>

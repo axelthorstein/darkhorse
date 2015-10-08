@@ -4,12 +4,24 @@ $(document).ready(function() {
 
   $(window).scroll(function () {
 
+    if ($(window).width() >= 600) {
+
     if ($(window).scrollTop() > 711) {
       $('#nav_bar').addClass('navbar-fixed');
     }
     if ($(window).scrollTop() < 710) {
       $('#nav_bar').removeClass('navbar-fixed');
     }
+  }
+  else {
+    if ($(window).scrollTop() > 481) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 480) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+
+  }
   });
 
 

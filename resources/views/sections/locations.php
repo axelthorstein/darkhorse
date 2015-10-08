@@ -8,7 +8,7 @@
 	<div class="container about-padding">
 		<div class="row">
 			<div class="col-md-4">
-				<img src="images/espresso.jpg" class="about-box">
+				<img src="images/espresso.jpg" class="about-box-mobile-show">
 			</div>
 	  		<div class="col-md-4">
 	  			<img src="images/baked.jpg" class="about-box">
@@ -55,7 +55,7 @@
 	  			<img src="images/queen_west.jpg" class="about-box">
 	  		</div>
 	  		<div class="col-md-4">
-				<img src="images/bakery2.jpg" class="about-box">
+				<img src="images/bakery2.jpg" class="about-box-mobile-show">
 			</div>
 			<div class="col-md-4">
 				<img src="images/canary.jpg" class="about-box">
